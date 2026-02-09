@@ -1,7 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
-import { AppView } from './types';
-import { getDailyVerseInsights } from './geminiService';
+import { AppView } from '../types';
+import { getDailyVerseInsights } from '../services/geminiService';
 
 interface DashboardProps {
   setActiveView: (view: AppView) => void;
@@ -45,7 +44,7 @@ const Dashboard: React.FC<DashboardProps> = ({ setActiveView, points }) => {
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
       </section>
 
-      {/* Community Hub Access - RESTORED */}
+      {/* Community Hub Access */}
       <section 
         onClick={() => setActiveView(AppView.COMMUNITY_HUB)}
         className="glass p-6 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-blue-500/30 flex justify-between items-center cursor-pointer hover:bg-blue-600/30 transition-all shadow-lg"
