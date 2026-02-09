@@ -1,4 +1,3 @@
-
 {
   "name": "lumina-genesis",
   "private": true,
@@ -12,7 +11,8 @@
   "dependencies": {
     "@google/genai": "^1.40.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.3"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
